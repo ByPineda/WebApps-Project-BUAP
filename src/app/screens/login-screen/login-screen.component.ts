@@ -3,26 +3,19 @@ declare var $: any;
 @Component({
   selector: 'app-login-screen',
   templateUrl: './login-screen.component.html',
-  styleUrls: ['./login-screen.component.scss']
+  styleUrls: ['./login-screen.component.scss'],
 })
-export class LoginScreenComponent implements OnInit{
-
+export class LoginScreenComponent implements OnInit {
   type: String = 'password';
   visible: Boolean = false;
   changetype: boolean = true;
 
-  viewPass(){
+  viewPass() {
     this.visible = !this.visible;
     this.changetype = !this.changetype;
   }
 
-  
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
-  
-
-
+  ngOnInit(): void {}
 }
