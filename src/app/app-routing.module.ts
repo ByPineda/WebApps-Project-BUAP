@@ -8,11 +8,11 @@ import { RegistroScreenComponent } from './screens/registro-screen/registro-scre
 const routes: Routes = [
   {
     path: '',
-    component: HomeScreenComponent,
+    component: LoginScreenComponent,
   },
   {
-    path: 'login',
-    component: LoginScreenComponent,
+    path: 'home',
+    component: HomeScreenComponent,
   },
   {
     path: 'registro',
