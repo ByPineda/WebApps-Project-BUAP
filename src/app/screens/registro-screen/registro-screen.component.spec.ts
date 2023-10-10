@@ -6,10 +6,14 @@ describe('RegistroScreenComponent', () => {
   let component: RegistroScreenComponent;
   let fixture: ComponentFixture<RegistroScreenComponent>;
 
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ RegistroScreenComponent ]
+    })
+    .compileComponents();
+  });
+
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [RegistroScreenComponent]
-    });
     fixture = TestBed.createComponent(RegistroScreenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
