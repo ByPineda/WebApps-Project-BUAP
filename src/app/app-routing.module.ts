@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginScreenComponent } from './screens/login-screen/login-screen.component';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
 import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
+import { RegistrarProductoScreenComponent}  from './screens/registrar-producto-screen/registrar-producto-screen.component';
 //Componentes
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
     path: 'registro',
     component: RegistroScreenComponent,
   },
+  {
+    path: "nuevo-producto",
+    component: RegistrarProductoScreenComponent,
+  }
 ];
 
 @NgModule({

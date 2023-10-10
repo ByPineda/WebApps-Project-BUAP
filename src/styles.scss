@@ -40,5 +40,14 @@
     font-display: swap;
 }
 
+.invalid-feedback {
+    display: block !important;
+    width: 100%;
+    margin-top: .75rem;
+    font-size: 80%;
+    color: #dc3545;
+    font-family: Nexa;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Nexa; }

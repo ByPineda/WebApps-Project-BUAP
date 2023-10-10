@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
+//navigate
+import { Router } from '@angular/router';
+
+
 declare var $: any;
 @Component({
   selector: 'app-login-screen',
@@ -6,6 +11,7 @@ declare var $: any;
   styleUrls: ['./login-screen.component.scss'],
 })
 export class LoginScreenComponent implements OnInit {
+  
   type: String = 'password';
   visible: Boolean = false;
   changetype: boolean = true;
@@ -15,7 +21,13 @@ export class LoginScreenComponent implements OnInit {
     this.changetype = !this.changetype;
   }
 
-  constructor() {}
+  constructor(private router : Router) {}
 
   ngOnInit(): void {}
+
+  public login(){
+    console.log('Login');
+    this.router.navigate(['/nuevo-producto']);
+
+  }
 }
